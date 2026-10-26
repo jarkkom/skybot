@@ -1,5 +1,5 @@
 from unittest import TestCase
-from mock import patch, Mock
+from unittest.mock import patch, Mock
 
 from helpers import get_fixture_file_data
 from bitcoin import bitcoin, ethereum

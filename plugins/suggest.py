@@ -10,7 +10,7 @@ def suggest(inp, inp_unstripped=None):
 
     if inp_unstripped is not None:
         inp = inp_unstripped
-    m = re.match("^#(\d+) (.+)$", inp)
+    m = re.match(r"^#(\d+) (.+)$", inp)
     num = 0
     if m:
         num, inp = m.groups()

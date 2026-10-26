@@ -1,0 +1,12 @@
+services:
+  irc:
+    image: lscr.io/linuxserver/ngircd:latest
+    container_name: skybot-test-irc
+    environment:
+      - TZ=UTC
+    volumes:
+      # linuxserver/ngircd reads this exact file as the daemon config.
+      - ./docker/ngircd/ngircd.conf:/config/ngircd.conf:ro
+    ports:
+      - "0.0.0.0:6667:6667/tcp"
+    restart: unless-stopped

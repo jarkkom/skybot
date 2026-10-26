@@ -1,5 +1,5 @@
 from unittest import skip, TestCase
-from mock import patch
+from unittest.mock import patch
 
 from dice import dice
 
