@@ -1,7 +1,7 @@
 from unittest import TestCase
 
 
-from mock import patch
+from unittest.mock import patch
 
 from helpers import get_fixture_file_data, execute_skybot_regex
 from twitter import show_tweet, twitter

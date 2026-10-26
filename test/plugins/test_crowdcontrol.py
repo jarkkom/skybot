@@ -1,6 +1,6 @@
 from collections import namedtuple
 from unittest import TestCase
-from mock import Mock, patch, call
+from unittest.mock import Mock, patch, call
 
 from helpers import execute_skybot_regex
 from crowdcontrol import crowdcontrol

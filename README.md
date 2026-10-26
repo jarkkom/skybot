@@ -18,7 +18,9 @@ To install dependencies, run:
 
     pip install -r requirements.txt
 
-Skybot runs on Python 2.7 and Python 3.7.
+Skybot requires Python 3.13 or newer and is tested on Python 3.14.
+
+Run the tests with `python test`, or use `uv run --python 3.14 python test`.
 
 ## License
 Skybot is public domain. If you find a way to make money using it, I'll be very impressed.

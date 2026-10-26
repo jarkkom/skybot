@@ -1,5 +1,5 @@
 from unittest import TestCase
-from mock import Mock, patch
+from unittest.mock import Mock, patch
 
 from helpers import get_fixture_file_data
 from crypto import crypto

@@ -108,7 +108,7 @@ class DiceTest(unittest.TestCase):
         actual = dice("2d20-d5+4")
 
         match = re.match(
-            "(?P<result>\d+) \(2d20-d5\+4=(?P<a>\d+), (?P<b>\d+), -(?P<c>\d+)\)", actual
+            r"(?P<result>\d+) \(2d20-d5\+4=(?P<a>\d+), (?P<b>\d+), -(?P<c>\d+)\)", actual
         )
 
         assert match is not None

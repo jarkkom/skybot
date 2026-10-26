@@ -33,7 +33,7 @@ def unescape(text):
                 pass
         return text  # leave as is
 
-    return re.sub("&#?\w+;", fixup, text)
+    return re.sub(r"&#?\w+;", fixup, text)
 
 
 ##############################################################################
